@@ -1,0 +1,66 @@
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale-1">
+	<link rel="stylesheet" href="D:\bootstrap.min.css">
+	<script src="C:\Downloads\bootstrap-5.0.2-dist.zip\bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js"></script>
+
+<script>
+	function regis()
+	{
+		let name=document.getElementById("name").value;
+		let username=document.getElementById("uname").value;
+		let pass=document.getElementById("pwd").value;
+		let mobile=document.getElementById("mobilen").value;
+		if(name==="")
+		{
+			alert("Please Enter Name.");
+			return false;
+		}
+		if(username==="")
+		{
+			alert("Please Enter Username.");
+			return false;
+		}
+		if(pass==="")
+		{
+			alert("Please Enter Password.");
+			return false;
+		}
+		if(mobile==="")
+		{
+			alert("Please Enter Mobile Number.");
+			return false;
+		}
+		alert("Form submitted successfully.");
+		return true;
+	}
+</script>
+</head>
+
+
+<body>
+	<h1 class="text-center">Mobile Shop</h1>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+	<ul class="nav">
+        <li class="nav-item"><a class="navbar-brand">Register</a></li>
+	</ul>
+	</div>
+	</nav>
+	<form action="phone.html" onsubmit="return regis()" class="container form-box">
+	<div class="container">
+	<label>Name:</label>
+		<input type="text" id="name" placeholder="Enter Your Name" class="form-control"><br>
+	<label>Username:</label>
+		<input type="text" id="uname" placeholder="Enter Username" class="form-control"><br>
+	<label>Password:</label>
+		<input type="password" id="pwd" placeholder="Enter Password" class="form-control"><br>
+	<label>Mobile No.:</label>
+		<input type="text" id="mobilen" placeholder="Enter Mobile Number" class="form-control"><br>
+	<input type="submit" class="btn btn-success">
+	<input type="reset">
+	</div>
+	</form>
+</body>
+</html>

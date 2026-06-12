@@ -1,0 +1,150 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="D:\bootstrap.min.css">
+	<script src="C:\Users\Admin\Downloads\bootstrap-5.0.2-dist.zip\bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js"></script>
+	<style>
+	.form-box { 
+      max-width: 400px; 
+      margin: auto; 
+      border: 3px solid #ccc; 
+      border-radius: 8px; 
+      padding: 15px; 
+      margin-top:20px;
+    }
+	body {
+  background-image: url("bg11.jpeg");         
+  background-size:cover;                 
+  background-position: center;                      
+         }
+	</style>
+	<script>
+        function validateRegistration() {
+            let uname = document.getElementById("username").value;
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let mobile = document.getElementById("mobile").value;
+
+            if (uname === "" || username === "" || password === "" || mobile === "") {
+                alert("All fields are required");
+                return false;
+            }
+            if (isNaN(mobile)) {
+                alert("Mobile number must contain only digits");
+                return false;
+            }
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+	<div class="container">
+	<div style="display:flex;gap:10px; margin:20px 0;">
+	<img src="logo.jpeg" alt="logo" style="height:125px;">
+	<div style="display:flex";flex-direction:column;text-align:left;">
+	<div style="font-size:30px; font-weight:bold;">Ann's Pizza Shop</div><br><br>
+	</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pizza Shop </a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+      <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+    </ul>
+  </div>
+</nav>
+	<h2 class="text-center">Customer Registration</h2>
+	<form action="home.html" onsubmit="return validateRegistration()" class="container form-box">
+	<label>Full Name:</label>
+	<input type="text" id="username" class="form-control">
+	
+	<label>Username:</label>
+        <input type="text" id="username" class="form-control">
+
+	<label>Password:</label>
+        <input type="password" id="password" class="form-control">
+
+        <label>Mobile Number:</label>
+        <input type="text" id="mobile" class="form-control">
+
+        <label>City:</label>
+        <select class="form-control">
+            <option>Surat</option>
+            <option>Ahmedabad</option>
+            <option>Rajkot</option>
+            <option>Vadodara</option>
+        </select><br>
+	<button type="submit" class="btn btn-primary">Register</input>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
